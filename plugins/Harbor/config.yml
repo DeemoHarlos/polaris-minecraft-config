@@ -41,7 +41,7 @@ messages:
     enabled: true
     message-cooldown: 5 # The amount of time in seconds before a player can send another bed enter or leave message
     player-sleeping: "&e[player] 要睡了，需要再 [more] 人才能跳過夜晚。 ([sleeping]/[needed])"
-    player-left-bed: "&e[player] 睡不著，需要再 [more] 人才能跳過夜晚。 ([sleeping]/[needed])"
+    player-left-bed: "&e[player] 自己睡不著，需要再 [more] 人才能跳過夜晚。 ([sleeping]/[needed])"
     night-skipping:
       - "&e快轉中..."
       - "&e正在向夜晚奔去..."
