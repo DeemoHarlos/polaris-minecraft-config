@@ -15,6 +15,6 @@ world*
 
 plugins/DiscordSRV/discord-console-log
 plugins/DiscordSRV/.token
-plugins/dynmap
+plugins/dynmap/*
 !plugins/dynmap/configuration.txt
 
