@@ -225,14 +225,15 @@ DiscordConsoleChannelFilters: {
   "issued server command": "使用指令",
   "Automatic saving is now disabled": "",
   "Saving is already turned off": "",
-  "Saving the game (this may take a moment!)": "存檔中...",
+  "Saving the game \\(this may take a moment!\\)": "存檔中...",
   "Saved the game": "已存檔",
   "Automatic saving is now enabled": "",
   "Saving is already turned on": "",
   "[0-9a-f]{8}(\\-[0-9a-f]{4}){4}[0-9a-f]{8}": "<UUID>",
   ".*logged in with entity id .*": "",
   "com\\.mojang\\.authlib\\.GameProfile@.*\\,name=": "",
-  "\\,properties\\=\\{textures\\=\\[com\\.mojang\\.authlib\\.properties\\.Property@.*": " 連動帳號要求"
+  "\\,properties\\=\\{textures\\=\\[com\\.mojang\\.authlib\\.properties\\.Property@.*": " 連動帳號要求",
+  "^UUID of player.*": "",
 }
 
 # levels to send to console channel via appender
