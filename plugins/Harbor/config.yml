@@ -49,6 +49,9 @@ messages:
       - "&e時空旅行！"
       - "&eZA WARUDO!"
       - "&e快轉中..."
+      - "&e我還不睡爆！"
+      - "&e學妹：學長我去洗澡囉！"
+      - "&e誰會想在凌晨三點吃美味蟹堡？"
     night-skipped:
       - "&e已跳過夜晚。"
       - "&e終於天亮了。"
@@ -60,6 +63,10 @@ messages:
       - "&e睡你媽Ｘ起來嗨！"
       - "&e醒來！這裡有一隻可愛的狗勾！"
       - "&e幹！是穿山甲耶！"
+      - "&eGood morning motherfuckers!"
+      - "&e我還不浠爆！"
+      - "&e現在時間　洞拐洞洞！部！隊！起床！"
+
   actionbar:
     enabled: true
     players-sleeping: "&e[needed] 人之中已經有 [sleeping] 人睡了，需要再 [more] 人才能跳過夜晚。"
