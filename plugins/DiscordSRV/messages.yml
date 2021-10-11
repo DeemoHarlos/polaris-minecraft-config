@@ -133,8 +133,8 @@ DynmapDiscordFormat: "**[Dynmap]** 匿名 : %message%"
 # DiscordConsoleChannelMessageSuffix: The literal suffix to append to a batch of lines.
 #
 DiscordConsoleChannelFormat: "`%datetime%` **[ %level% ]** %line%"
-DiscordConsoleChannelMessagePrefix: ""
-DiscordConsoleChannelMessageSuffix: ""
+DiscordConsoleChannelMessagePrefix: ":small_orange_diamond: "
+DiscordConsoleChannelMessageSuffix: "\n"
 
 # Discord chat channel !c command error message
 # Used when an error occurs with permissions for the player to run the command, not an error running the command itself
@@ -417,19 +417,19 @@ ServerWatchdogMessage: "`%date%` <@351754768118710272> 伺服器炸掉了 OAO :f
 # MinecraftNobodyFound:         %target%:       the input that led to no results being found
 #
 # Discord
-CodeGenerated: "Your link code is %code%. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
-UnknownCode: "I don't know of such a code, try again."
-InvalidCode: "Are you sure that's your code? Link codes are 4 numbers long."
-DiscordAccountLinked: "Your Discord account has been linked to %name% (%uuid%)"
-DiscordAccountAlreadyLinked: "You are already linked to %username% (%uuid%)"
-DiscordLinkedAccountRequired: "You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
-DiscordLinkedAccountCheckFailed: "Unable to check if your account is linked, please try again later"
+CodeGenerated: "你的連動驗證碼是 %code%. 欲連動帳號請將此驗證碼私訊 Discord 機器人 (%botname%) 。"
+UnknownCode: "驗證碼錯誤，請重試。"
+InvalidCode: "你確定這是驗證碼嗎？驗證碼應該只有四位數字。"
+DiscordAccountLinked: "你的 Discord 帳號已經連動到 %name% (%uuid%)。"
+DiscordAccountAlreadyLinked: "你的帳號已經連動到 %username% (%uuid%)"
+DiscordLinkedAccountRequired: "你嘗試著在遊戲內輸入以下內容，但伺服器要求你的帳號必須連動到 Discord。 在遊戲內輸入 `/discord link`. \n```%message%```"
+DiscordLinkedAccountCheckFailed: "無法檢查你的帳號是否有連動，請稍候再試。"
 # Minecraft
-ClickToCopyCode: "Click to copy"
-MinecraftAccountLinked: "&bYour UUID has been linked to Discord user %username% (%id%)"
-MinecraftAccountAlreadyLinked: "&bYour Minecraft account is already associated with a Discord account. Should you have permission to, you can unlink your account with /discord unlink."
-LinkedCommandSuccess: "&bYour Minecraft account is associated with %name%."
-UnlinkCommandSuccess: "&bYour Minecraft account is no longer associated with %name%."
-MinecraftNoLinkedAccount: "&cYour Minecraft account isn't associated with a Discord account."
-LinkingError: "&cCurrently unable to link accounts due to an internal error. Contact your server administration team."
-MinecraftNobodyFound: "&cNobody found with Discord ID/Discord name/Minecraft name/Minecraft UUID matching \"%target%\" to look up."
+ClickToCopyCode: "點選以複製"
+MinecraftAccountLinked: "&b你的 UUID 已經連動到 Discord 帳號 %username% (%id%)"
+MinecraftAccountAlreadyLinked: "&b你的 Minecraft 帳號已經跟另一個 Discord 帳號連動。有權限的話，你可以輸入 /discord unlink 來取消連動。"
+LinkedCommandSuccess: "&b你的 Minecraft 帳號已經成功和 %name% 連動了。"
+UnlinkCommandSuccess: "&b你的 Minecraft 帳號已經成功和 %name% 取消連動了。"
+MinecraftNoLinkedAccount: "&c你的 Minecraft 帳號尚未與任何 Discord 帳號連動。"
+LinkingError: "&c目前無法完成連動設定。請聯絡管理員。"
+MinecraftNobodyFound: "&c找不到相符的 Discord ID / Discord 名字 / Minecraft 名字 / Minecraft UUID。"

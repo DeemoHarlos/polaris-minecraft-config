@@ -216,7 +216,7 @@ DiscordConsoleChannelFilters: {
   "^<[A-z0-9]+>.*": "",
   "^Chat: \\[DC\\].*": "",
   "^\\[WEB\\].*": "",
-  "\\n": " ",
+  "\\n": " | ",
   "([0-9]{1,3}\\.){3}[0-9]{1,3}(:[0-9]{1,5})?": "<IP>",
   "lost connection: Disconnected": "已離線",
   "left the game": "離開了北極地",
@@ -232,7 +232,7 @@ DiscordConsoleChannelFilters: {
   "[0-9a-f]{8}(\\-[0-9a-f]{4}){4}[0-9a-f]{8}": "<UUID>",
   ".*logged in with entity id .*": "",
   "com\\.mojang\\.authlib\\.GameProfile@.*\\,name=": "",
-  "\\,properties\\=\\{textures\\=\\[com\\.mojang\\.authlib\\.properties\\.Property@.*": "連動帳號要求"
+  "\\,properties\\=\\{textures\\=\\[com\\.mojang\\.authlib\\.properties\\.Property@.*": " 連動帳號要求"
 }
 
 # levels to send to console channel via appender
