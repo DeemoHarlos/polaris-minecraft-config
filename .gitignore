@@ -3,7 +3,7 @@
 *.dat
 *.swp
 
-.console-history
+.console_history
 active
 version_history.json
 usercache.json
