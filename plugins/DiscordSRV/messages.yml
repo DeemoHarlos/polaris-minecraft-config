@@ -132,7 +132,7 @@ DynmapDiscordFormat: "**[Dynmap]** 匿名 : %message%"
 # DiscordConsoleChannelMessagePrefix: The literal prefix to prepend to a batch of lines.
 # DiscordConsoleChannelMessageSuffix: The literal suffix to append to a batch of lines.
 #
-DiscordConsoleChannelFormat: ":small_orange_diamond: `%datetime%` **[ %level% ]** %line%\n"
+DiscordConsoleChannelFormat: ":small_orange_diamond: `%datetime%` **[ %level% ]** %line%"
 DiscordConsoleChannelMessagePrefix: ""
 DiscordConsoleChannelMessageSuffix: ""
 
