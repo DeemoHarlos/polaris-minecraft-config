@@ -47,7 +47,7 @@ Require linked account to play:
   # Optionally require people to not only be linked but also to have a one of or all specified roles like a Twitch sub role
   Subscriber role:
     Require subscriber role to join: true
-    Subscriber roles: ["896516848995164170"]
+    Subscriber roles: ["896514834361888828"]
     Require all of the listed roles: false # when false, only one of the above roles is required
     Kick message: "&c你尚未取得 &b@北極地&c 身分組！請洽 &b@北極地OP&c"
 
