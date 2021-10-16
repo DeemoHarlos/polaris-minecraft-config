@@ -360,17 +360,17 @@ MinecraftPlayerAchievementMessage:
 # %tps%:           average TPS of the server
 # PlaceholderAPI placeholders are also supported
 #
-ChannelTopicUpdaterChatChannelTopicFormat: "[ONLINE] 玩家 %playercount%/%totalplayers% 人 | 運轉時間 %uptimemins% 分 | 歷史玩家 %playermax% 人"
+ChannelTopicUpdaterChatChannelTopicFormat: "[ONLINE] 玩家 %playercount% / %totalplayers% 人 | 運轉時間 %uptimemins% 分"
 ChannelTopicUpdaterConsoleChannelTopicFormat: "[ONLINE] Minecraft Paper %serverversion% | TPS: %tps% | RAM 已用 %usedmemorygb% GB、可用 %freememorygb% GB、共 %maxmemorygb% GB"
 # AtServerShutdownFormats ONLY supports %totalplayers%, %serverversion%, & %date% / %time%
-ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "[OFFLINE] 歷史玩家 %totalplayers% 人"
-ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "[OFFLINE] Minecraft Paper %serverversion%"
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "[OFFLINE]"
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "[OFFLINE]"
 
 # Discord command message
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
 # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
 #
-DiscordCommandFormat: "Mizuki 小浠的北極星聚點: <{INVITE}> | 北極地 DC <https://discord.gg/Ef4N43kkt3> | 指令幫助請輸入 \"/discord ?\""
+DiscordCommandFormat: "Mizuki 小浠的北極星聚點: <{INVITE}> | 指令幫助請輸入 \"/discord ?\""
 
 # No permission message
 NoPermissionMessage: "&c你不能這樣！"
