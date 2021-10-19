@@ -18,4 +18,5 @@ plugins/DiscordSRV/.token
 plugins/DiscordSRV/linkedaccounts.json
 plugins/dynmap/*
 !plugins/dynmap/configuration.txt
+plugins/CoreProtect/*.db
 
