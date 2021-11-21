@@ -32,7 +32,7 @@ enable-rcon=false
 sync-chunk-writes=true
 op-permission-level=4
 prevent-proxy-connections=false
-resource-pack=
+resource-pack=https://www.dropbox.com/s/xz3upvjwb6j91yt/dMizbuki.zip?dl=1
 entity-broadcast-range-percentage=100
 rcon.password=
 player-idle-timeout=0
