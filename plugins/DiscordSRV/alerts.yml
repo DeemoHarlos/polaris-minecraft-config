@@ -86,7 +86,7 @@ Alerts:
       Color: "#00ff00"
       Author:
         ImageUrl: "{embedavatarurl}"
-        Name: "釣~魚釣~魚釣到甚麼魚，看 {name} 釣到一隻 ${caught.itemStack.type.name()}！"
+        Name: "釣~魚釣~魚釣到甚麼魚，看 {displayname} 釣到一隻 ${caught.itemStack.type.name()}！"
 
   # Example config to send Matrix anti-cheat messages
   #- Trigger: PlayerViolationEvent
@@ -100,15 +100,15 @@ Alerts:
   #      Name: "{username} failed ${hackType.name().toLowerCase()} check | ${component} | vl:${violations} ping:${player.handle.ping} tps:{tps}"
 
   # Example config to send /gamemode messages
-  #- Trigger: /gamemode
-  #  Channel: gamemode
-  #  Conditions:
-  #    - '#player.hasPermission("minecraft.command.gamemode") == true'
-  #  Embed:
-  #    Color: "#ff0000"
-  #    Author:
-  #      ImageUrl: "{embedavatarurl}"
-  #      Name: "{username} changed gamemode to ${#args.get(0)}"
+  - Trigger: /gamemode
+    Channel: gamemode
+    Conditions:
+      - '#player.hasPermission("minecraft.command.gamemode") == true'
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "{displayname} changed gamemode to ${#args.get(0)}"
 
   # Example config to send /me commands
   - Trigger: /me
