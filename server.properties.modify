@@ -1,6 +1,6 @@
 #Minecraft server properties
 #Sun Oct 10 08:04:29 UTC 2021
-msm-ram=5500
+msm-ram=11000
 enable-jmx-monitoring=false
 msm-stop-delay=60
 rcon.port=25575
@@ -50,5 +50,5 @@ text-filtering-config=
 spawn-monsters=true
 enforce-whitelist=false
 resource-pack-sha1=
-spawn-protection=16
+spawn-protection=8
 max-world-size=29999984
