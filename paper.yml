@@ -277,10 +277,11 @@ world-settings:
     tick-rates:
       sensor:
         villager:
-          secondarypoisensor: 40
+          secondarypoisensor: 80
       behavior:
         villager:
-          validatenearbypoi: -1
+          validatenearbypoi: 60
+          acquirepoi: 120
     feature-seeds:
       generate-random-seeds-for-all: false
     anti-xray:
