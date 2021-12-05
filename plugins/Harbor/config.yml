@@ -8,11 +8,11 @@
 
 night-skip:
   enabled: true # Skip the night if a percentage of the players in a world are sleeping
-  percentage: 60 # Percentage of players required to be sleeping to skip the night (0 - 100)
-  time-rate: 60 # The amount of ticks added to the current time every tick when skipping the night
+  percentage: 50 # Percentage of players required to be sleeping to skip the night (0 - 100)
+  time-rate: 80 # The amount of ticks added to the current time every tick when skipping the night
   daytime-ticks: 1200 # The time in ticks that Harbor considers day
   instant-skip: false # Instantly skip the night when the percentage threshold is reached instead of showing the full animation
-  proportional-acceleration: true # Increase the night skipping speed based on the amount of sleeping players
+  proportional-acceleration: false # Increase the night skipping speed based on the amount of sleeping players
   clear-rain: true # Clear rain (if it's raining) when the night is skipped
   clear-thunder: true # Clear thunder (if it's thundering) when the night is skipped
   reset-phantom-statistic: false # Treats everyone online as if they have slept in the last 3 days after the night is skipped (check out /gamerule doInsomnia on 1.15+)
@@ -28,7 +28,7 @@ exclusions:
 # Essentials API is used for AFK detection when available- otherwise a fallback system is used
 afk-detection:
   enabled: true
-  timeout: 5 # Time in minutes until a player is considered AFK
+  timeout: 1 # Time in minutes until a player is considered AFK
 
 # Blacklist for worlds- Harbor will ignore these worlds
 blacklisted-worlds:
@@ -39,9 +39,9 @@ whitelist-mode: false # Will treat the above list as a whitelist instead of a bl
 messages:
   chat:
     enabled: true
-    message-cooldown: 5 # The amount of time in seconds before a player can send another bed enter or leave message
-    player-sleeping: "&e[player] 要睡了，需要再 [more] 人才能跳過夜晚。 ([sleeping]/[needed])"
-    player-left-bed: "&e[player] 自己睡不著，需要再 [more] 人才能跳過夜晚。 ([sleeping]/[needed])"
+    message-cooldown: 1 # The amount of time in seconds before a player can send another bed enter or leave message
+    player-sleeping: "&e[player] 要睡了"
+    player-left-bed: "&e[player] 不睡了"
     night-skipping:
       - "&e快轉中..."
       - "&e正在向夜晚奔去..."
@@ -65,19 +65,19 @@ messages:
       - "&e幹！是穿山甲耶！"
       - "&eGood morning motherfuckers!"
       - "&e我還不浠爆！"
-      - "&e現在時間　洞拐洞洞！部！隊！起床！"
+      - "&e現在時間！洞拐洞洞！部！隊！起床！"
 
   actionbar:
     enabled: true
     players-sleeping: "&e[needed] 人之中已經有 [sleeping] 人睡了，需要再 [more] 人才能跳過夜晚。"
-    night-skipping: "&e大家都去睡覺了，晚安！"
+    night-skipping: "&e睡覺了，晚安！"
   bossbar:
     enabled: true
     players-sleeping:
-      message: "&f&l[needed] 人之中已經有 [sleeping] 人睡了，需要再 [more] 人才能跳過夜晚。"
+      message: "&f&l[sleeping] / [needed]"
       color: BLUE
     night-skipping:
-      message: "&f&l大家都去睡覺了，晚安！"
+      message: "&f&lZzz..."
       color: GREEN
   miscellaneous:
     chat-prefix: "&8&l(&6&lHarbor&8&l)&f "
