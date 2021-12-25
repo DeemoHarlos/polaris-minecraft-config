@@ -119,26 +119,26 @@ world-settings:
     ender-dragons-death-always-places-dragon-egg: false
     piglins-guard-chests: true
     should-remove-dragon: false
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 16
     baby-zombie-movement-modifier: 0.5
-    optimize-explosions: false
+    optimize-explosions: true
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
     remove-corrupt-tile-entities: false
     experience-merge-max-value: -1
-    prevent-moving-into-unloaded-chunks: false
+    prevent-moving-into-unloaded-chunks: true
     count-all-mobs-for-spawning: false
     allow-using-signs-inside-spawn-protection: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 8
+    max-entity-collisions: 2
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
-    update-pathfinding-on-block-update: true
+    update-pathfinding-on-block-update: false
     fix-wither-targeting-bug: false
     map-item-frame-cursor-update-interval: 10
     allow-player-cramming-damage: false
@@ -147,7 +147,7 @@ world-settings:
     seed-based-feature-search-loads-chunks: true
     water-over-lava-flow-speed: 5
     grass-spread-tick-rate: 1
-    use-faster-eigencraft-redstone: false
+    use-faster-eigencraft-redstone: true
     nether-ceiling-void-damage-height: 0
     parrots-are-unaffected-by-player-movement: false
     fix-items-merging-through-walls: false
@@ -165,7 +165,7 @@ world-settings:
     portal-search-vanilla-dimension-scaling: true
     container-update-tick-rate: 1
     armor-stands-do-collision-entity-lookups: true
-    fix-climbing-bypassing-cramming-rule: false
+    fix-climbing-bypassing-cramming-rule: true
     prevent-tnt-from-moving-in-water: false
     show-sign-click-command-failure-msgs-to-player: false
     iron-golems-can-spawn-in-air: false
@@ -173,8 +173,8 @@ world-settings:
     delay-chunk-unloads-by: 10s
     all-chunks-are-slime-chunks: false
     armor-stands-tick: true
-    non-player-arrow-despawn-rate: -1
-    creative-arrow-despawn-rate: -1
+    non-player-arrow-despawn-rate: 20
+    creative-arrow-despawn-rate: 20
     spawner-nerfed-mobs-should-jump: false
     entities-target-with-follow-range: false
     zombies-target-turtle-eggs: true
@@ -189,12 +189,24 @@ world-settings:
     generator-settings:
       flat-bedrock: false
     entity-per-chunk-save-limit:
-      experience_orb: -1
-      snowball: -1
-      ender_pearl: -1
-      arrow: -1
-      fireball: -1
-      small_fireball: -1
+      experience_orb: 16
+      arrow: 16
+      dragon_fireball: 3
+      egg: 8
+      ender_pearl: 8
+      eye_of_ender: 8
+      fireball: 8
+      small_fireball: 8
+      firework_rocket: 8
+      potion: 8
+      llama_spit: 3
+      shulker_bullet: 8
+      snowball: 8
+      spectral_arrow: 16
+      experience_bottle: 3
+      trident: 16
+      wither_skull: 4
+      area_effect_cloud: 8
     game-mechanics:
       scan-for-legacy-ender-dragon: true
       fix-curing-zombie-villager-discount-exploit: true
@@ -278,6 +290,10 @@ world-settings:
       sensor:
         villager:
           secondarypoisensor: 80
+          nearestbedsensor: 80
+          villagerbabiessensor: 40
+          playersensor: 40
+          nearestlivingentitysensor: 40
       behavior:
         villager:
           validatenearbypoi: 60
@@ -285,7 +301,7 @@ world-settings:
     feature-seeds:
       generate-random-seeds-for-all: false
     anti-xray:
-      enabled: false
+      enabled: true
       engine-mode: 1
       max-block-height: 64
       update-radius: 2
@@ -318,7 +334,7 @@ world-settings:
       - oak_planks
       - deepslate
     viewdistances:
-      no-tick-view-distance: 12
+      no-tick-view-distance: 8
     unsupported-settings:
       fix-invulnerable-end-crystal-exploit: true
     squid-spawn-height:
