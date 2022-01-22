@@ -64,7 +64,7 @@ stats:
 world-settings:
   default:
     below-zero-generation-in-existing-chunks: true
-    simulation-distance: default
+    simulation-distance: 4
     thunder-chance: 100000
     verbose: false
     hopper-amount: 1
@@ -88,7 +88,7 @@ world-settings:
     max-tnt-per-tick: 100
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
-    view-distance: 3
+    view-distance: 48
     wither-spawn-sound-radius: 0
     arrow-despawn-rate: 1200
     trident-despawn-rate: 1200
