@@ -11,6 +11,8 @@ server.properties
 
 cache
 logs
+libraries
+versions
 world*
 
 plugins/DiscordSRV/discord-console-log
