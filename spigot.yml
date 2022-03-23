@@ -150,7 +150,7 @@ world-settings:
         flying-monsters-for: 100
     ticks-per:
       hopper-transfer: 8
-      hopper-check: 8
+      hopper-check: 1
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
