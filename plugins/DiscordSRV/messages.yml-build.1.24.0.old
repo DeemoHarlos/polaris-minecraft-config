@@ -1,8 +1,9 @@
-# Discord -> Minecraft message
-#
+### Discord -> Minecraft message
+
 # DiscordToMinecraftChatMessageFormat: the format used when sending messages from Discord to Minecraft
+DiscordToMinecraftChatMessageFormat: "&b[DC]&r <%toprolecolor%%toprolealias%&r>%name%%reply% : %message%"
+
 # DiscordToMinecraftChatMessageFormatNoRole: the format used when sending messages from Discord to Minecraft when the person doesn't have any roles
-#
 # You can specify a different format per channel. Let's say you have a channel named: "mychannel".
 # If you want it to have other formatting than the one defined globally you can add following properties:
 #
@@ -31,9 +32,11 @@
 # %reply%:          the message displayed when the message is a reply to another message.
 #                    The message format can be configured with DiscordToMinecraftMessageReplyFormat,
 #                    this will be empty if the message isn't a reply to another message
-#
+DiscordToMinecraftChatMessageFormatNoRole: "&b[DC]&r %name%%reply% : %message%"
+
 # DiscordToMinecraftAllRolesSeparator: the separator used in between roles in %allroles%
-#
+DiscordToMinecraftAllRolesSeparator: " | "
+
 # DiscordToMinecraftMessageReplyFormat: the format for the message displayed to indicate that the message is a reply
 #
 # Available placeholders:
@@ -44,10 +47,6 @@
 # %message%:       the content of the message that is being replied to
 #
 # NOTE: The %reply% placeholder needs to be present in the format if you want the DiscordToMinecraftMessageReplyFormat to display in your message.
-#
-DiscordToMinecraftChatMessageFormat: "&b[DC]&r <%toprolecolor%%toprolealias%&r>%name%%reply% : %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "&b[DC]&r %name%%reply% : %message%"
-DiscordToMinecraftAllRolesSeparator: " | "
 DiscordToMinecraftMessageReplyFormat: " -> %name%"
 
 # Minecraft -> Discord message
@@ -122,22 +121,20 @@ DynmapDiscordFormat: "**[Dynmap]** %name% : %message%"
 # This is the format used when sending a line from the console to the console channel, if enabled
 #
 # Available placeholders:
-# {level}:    message severity level
-#              example: INFO, WARN, ERROR
-# {name}:     logger name
-#              example: Server
-# {datetime}: current date & time
-#              example: Sun Jan 1 15:30:45 PDT 2017
+# %datetime%:  current date & time
+#               example: Sun Jan 1 15:30:45 PDT 2017
+# %level%:     message severity level
+#               example: INFO, WARN, ERROR
+# %line%:      line from the console
+#               example: [DiscordSRV] Enabling DiscordSRV vX.Y
 # PlaceholderAPI placeholders are also supported
 #
-# DiscordConsoleChannelTimestampFormat: The date format that will be used for the {date} and {datetime} placeholders
-# DiscordConsoleChannelPrefix: The prefix to prepend
-# DiscordConsoleChannelSuffix: The suffix to append
+# DiscordConsoleChannelMessagePrefix: The literal prefix to prepend to a batch of lines.
+# DiscordConsoleChannelMessageSuffix: The literal suffix to append to a batch of lines.
 #
-DiscordConsoleChannelTimestampFormat: "EEE HH:mm:ss"
-DiscordConsoleChannelPrefix: "[{date} {level}{name}] "
-DiscordConsoleChannelSuffix: ""
-DiscordConsoleChannelPadding: 0
+DiscordConsoleChannelFormat: ":small_orange_diamond: `%datetime%` **[ %level% ]** %line%"
+DiscordConsoleChannelMessagePrefix: ""
+DiscordConsoleChannelMessageSuffix: ""
 
 # Discord chat channel !c command error message
 # Used when an error occurs with permissions for the player to run the command, not an error running the command itself
@@ -193,7 +190,7 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 # Available placeholders for PlayerJoin messages:
 # %message%:        join message as seen in-game
 #
-MinecraftPlayerJoinMessage: 
+MinecraftPlayerJoinMessage:
   Enabled: true
   Webhook:
     Enable: true
@@ -222,7 +219,7 @@ MinecraftPlayerJoinMessage:
 # Available placeholders for PlayerFirstJoin messages:
 # %message%:        join message as seen in-game
 #
-MinecraftPlayerFirstJoinMessage: 
+MinecraftPlayerFirstJoinMessage:
   Enabled: true
   Webhook:
     Enable: true
@@ -251,7 +248,7 @@ MinecraftPlayerFirstJoinMessage:
 # Available placeholders for PlayerLeave messages:
 # %message%:        leave message as seen in-game
 #
-MinecraftPlayerLeaveMessage: 
+MinecraftPlayerLeaveMessage:
   Enabled: true
   Webhook:
     Enable: true
@@ -281,7 +278,7 @@ MinecraftPlayerLeaveMessage:
 # %deathmessage%: raw death message
 # %world%:        the name of the world the user died in
 #
-MinecraftPlayerDeathMessage: 
+MinecraftPlayerDeathMessage:
   Enabled: true
   Webhook:
     Enable: true
@@ -311,7 +308,7 @@ MinecraftPlayerDeathMessage:
 # %achievement%: title of the achievement/advancement
 # %world%:       the name of the world the user is in
 #
-MinecraftPlayerAchievementMessage: 
+MinecraftPlayerAchievementMessage:
   Enabled: true
   Webhook:
     Enable: true
@@ -398,8 +395,6 @@ DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **北極地已關閉*
 #                        you can @mention roles by using "<@&ROLEID>", i.e. "<@&12345678901234567890>"; see console when discordsrv loads for role ids
 #                        you can @mention the owner of the server by using "%guildowner%"
 #                        you can put the date and time of the crash in the message by using %date%
-#                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
-#                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
 ServerWatchdogMessage: "`%date%` <@351754768118710272> 伺服器炸掉了 OAO :fire::fire::fire::bangbang:"
 

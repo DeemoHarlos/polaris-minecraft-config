@@ -2,7 +2,6 @@
 # It is an experimental feature. Things may not work properly.
 # If you do play around with this module, please send us feedback about any
 # issues on our Discord. https://discordsrv.com/discord
-#
 
 # Whether or not to enable the proximity voice chat feature of DiscordSRV
 # You must restart your server after changing this option
@@ -19,7 +18,7 @@ Lobby channel: 000000000000000000
 # Mutes users in the lobby who have the Speak and Mute Others permissions in the lobby
 Mute users who bypass speak permissions in the lobby: true
 
-Network: 
+Network:
   # Maximum distance between players in order to be connected
   Vertical Strength: 40
   Horizontal Strength: 80

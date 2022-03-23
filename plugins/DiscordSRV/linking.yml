@@ -1,4 +1,4 @@
-Require linked account to play:
+Require linked account to play: 
   Enabled: true
 
   # If you don't know what these mean, don't touch them
@@ -27,33 +27,8 @@ Require linked account to play:
   # Use {CODE} as a placeholder for the code people need to DM the bot
   # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
   Not linked message: "&7你必須連動你的 &9Discord &7帳號才能進入北極地。\n\
-&7請將驗證碼 &b{CODE}&7 私訊給 Discord 機器人 &b{BOT}&7\n\
-&7Mizuki 小浠的北極星聚點 : &b<{INVITE}>"
 
-  # If enabled, players will not only need to have their accounts linked but will also be required
-  # to be a member of a Discord server that the bot is also in.
-  #
-  # Acceptable formats:
-  #   true/false: linked account must be in at least one Discord server that the bot is also in
-  #     ex: true
-  #   <server id>: linked account must be in the given Discord server
-  #     ex: 135634590575493120
-  #   [<server id>, <server id>, ...]: linked account must be in ALL of the given Discord servers
-  #     ex: [135634590575493120, 690411863766466590]
-  #
-  # This option's value is superseded when you have subscriber roles enforced below.
-  Must be in Discord server: 896514638454329424
 
-  # Optionally require people to not only be linked but also to have a one of or all specified roles like a Twitch sub role
-  Subscriber role:
-    Require subscriber role to join: true
-    Subscriber roles: ["896516848995164170"]
-    Require all of the listed roles: false # when false, only one of the above roles is required
-    Kick message: "&c你尚未取得 &b@北極地&c 身分組！請洽 &b@北極地OP&c"
 
-  Messages:
-    DiscordSRV still starting: "&c目前尚無法檢查連動狀態，因為伺服器還在連線中。\n請稍候再試。"
-    Not in server: "&c你並不在虧浠家族 Discord 伺服器裡!\n邀請連結： &b<{INVITE}>&c"
-    Failed to find subscriber role: "&c找不到所需的身分組。\n請聯絡 &b@北極地OP&c 。"
-    Failed for unknown reason: "&c驗證你的帳號時出現了錯誤。\n請聯絡 &b@北極地OP&c 。"
-    Kicked for unlinking: "&c你因為未連動帳號而被自動踢出。\n請重新連動帳號以後再試一次。"
+
+
