@@ -134,8 +134,8 @@ DynmapDiscordFormat: "**[Dynmap]** %name% : %message%"
 # DiscordConsoleChannelPrefix: The prefix to prepend
 # DiscordConsoleChannelSuffix: The suffix to append
 #
-DiscordConsoleChannelTimestampFormat: "EEE HH:mm:ss"
-DiscordConsoleChannelPrefix: "[{date} {level}{name}] "
+DiscordConsoleChannelTimestampFormat: "HH:mm:ss"
+DiscordConsoleChannelPrefix: "◇ {datetime} [ {level} ] "
 DiscordConsoleChannelSuffix: ""
 DiscordConsoleChannelPadding: 0
 
