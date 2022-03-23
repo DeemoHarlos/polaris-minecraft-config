@@ -26,9 +26,7 @@ Require linked account to play:
   # Use {BOT} as a placeholder for the bot's name
   # Use {CODE} as a placeholder for the code people need to DM the bot
   # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
-  Not linked message: "&7你必須連動你的 &9Discord &7帳號才能進入北極地。\n\
-&7請將驗證碼 &b{CODE}&7 私訊給 Discord 機器人 &b{BOT}&7\n\
-&7Mizuki 小浠的北極星聚點 : &b<{INVITE}>"
+  Not linked message: "&7你必須連動你的 &9Discord &7帳號才能進入北極地。\n\n&7請將驗證碼 &b{CODE}&7 私訊給 Discord 機器人 &b{BOT}&7\n\n&7Mizuki 小浠的北極星聚點 : &b<{INVITE}>"
 
   # If enabled, players will not only need to have their accounts linked but will also be required
   # to be a member of a Discord server that the bot is also in.
